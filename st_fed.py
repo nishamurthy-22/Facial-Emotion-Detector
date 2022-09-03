@@ -42,7 +42,8 @@ if picture :
     st.image(input_image)
 
    
-
-    st.success("Your emotion is {}".format(emotion_name))
+    maxemotion = max(zip(emotions.values(),emotions.keys()))[1]
+    st.success("Your emotion is {}".format(maxemotion))
+    
 
 
